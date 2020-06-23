@@ -8,7 +8,7 @@
 ``` env\scripts\activate ```
 
 ### step 3: Download the packages using requirement.txt
-``` pip install -r requirement.txt ```
+``` pip install -r requirements.txt ```
 
 ### step 4: Run the app.py file
 ``` python app.py ```
