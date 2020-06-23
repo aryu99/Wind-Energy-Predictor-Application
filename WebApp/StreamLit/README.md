@@ -8,7 +8,7 @@
 ``` env\scripts\activate ```
 
 ### step 3: Download the packages 
-``` pip install streamlit ```
+``` pip install streamlit ```<br>
 install pandas , numpy , matplotlib etc
 
 ### step 4: Run the app.py file
