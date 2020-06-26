@@ -14,7 +14,19 @@
   </div>
 
 <br>
-<div class="container">
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h2 >Current Weather In Istanbul,Turkey</h2>
+      <p class="lead"> Current Temperature : {{ val['temp'] }}  &#8451;  <br> 
+        Max Temperature : {{ val['maxtemp'] }}  &#8451; <br>
+        Min Temperature : {{ val['mintemp'] }}  &#8451; <br>
+        Wind Speed : {{ val['windspeed'] }} m/s <br>
+        Wind Direction :  {{ val['winddir'] }}&#176;
+     </p>
+    </div>
+</div>
+
+<div class="container-sm">
     <form action="/predict" method="POST">
         <div class="form-group px-4 py-3">
             <label for="Wind Speed">Wind Speed</label>
@@ -31,5 +43,10 @@
     </form>
 </div>
 
-<h3 >  {{ val["pred"] }}  </h3>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h2 >{{ val['pred'] }}</h2>
+     </p>
+    </div>
+</div>
 {% endblock body %}
