@@ -4,6 +4,8 @@ Made by ***Team YUMIT***, for a better, green future. :deciduous_tree:
 
 **[Click here](https://drive.google.com/file/d/1kY-niv9kU3Jquc3cabrvWrytKa1_y7fi/view) to check out our video presentation for the project. For web application demo, please skip to 2:36 in the video.**
 
+**[Click here](https://drive.google.com/file/d/1yd6g79vODjzk3qt0cpVAwvl3IoW8qM7u/view) to see our PowerPoint Presentation for the project.**
+
 # Overview
 
 As the world moves forward, renewable energy sources will play a crucial role in promoting a green, sustainable society and hence, will directly impact on the health and well-being of all humans across Earth.
