@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>About</title>
+{% endblock head %}
+
+{% block body %}
+<div class="container" style="padding: 20px;">
+  <h1>OUR TEAM</h1>
+    <div class="row row-cols-1 row-cols-md-4">
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://raw.githubusercontent.com/Harsh1347/Flask/master/images/ar.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><b>Aryaman Samyal</b></h5>
+              <p class="card-text"><h3><a href="https://www.linkedin.com/in/aryaman-samyal-21b61b155/" class="badge badge-primary">LinkedIn</a></h3> 
+                <h2><a href="https://github.com/aryu99" class="badge badge-dark">GitHub</a></h2></p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://raw.githubusercontent.com/Harsh1347/Flask/master/images/hg.jpg" height ="250" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><b>Harsh Gupta</b></h5>
+              <p class="card-text"><h3><a href="https://www.linkedin.com/in/harshg1347/" class="badge badge-primary">LinkedIn</a></h3> 
+                <h2><a href="https://github.com/Harsh1347" class="badge badge-dark">GitHub</a></h2></p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://raw.githubusercontent.com/Harsh1347/Flask/master/images/jv.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><b>Jayant Venigalla</b></h5>
+              <p class="card-text"><h3><a href="https://www.linkedin.com/in/jayantvenigalla/" class="badge badge-primary">LinkedIn</a></h3> 
+                <h2><a href="https://github.com/Vjayant7" class="badge badge-dark">GitHub</a></h2></p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="https://raw.githubusercontent.com/Harsh1347/Flask/master//images/ns.jpeg" class="card-img-top" alt="Neil Sequeira">
+            <div class="card-body">
+              <h5 class="card-title"><b>Neil Sequeira</b></h5>
+              <p class="card-text"><h3><a href="https://www.linkedin.com/in/neil-sequeira-00970615b/" class="badge badge-primary">LinkedIn</a></h3> 
+                <h2><a href="https://github.com/NeilS99" class="badge badge-dark">GitHub</a></h2></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h2>OUR SOLUTION</h2>
+          </div>
+          <div class="col-sm" align = right>
+            <a href="https://smartinternz.com/ibm-hack-challenge-2020"  class="badge badge-dark">IBM Hack Challenge 2020</a>
+          </div>
+        </div>
+      
+      
+      <p> Our approach combines teamwork, knowledge of various domains and advanced simulation to help wind farm and electric power grid operators. We have incorporated multiple components of our solution into a single, fluid, web-based user interface that will accurately predict the power output of the wind turbine, given the current weather conditions, for the next 72 hours. The web application provides a graphical plot of the power requirement versus the power currently generated and also features a dashboard which includes visualization of the past data. </p>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Wind energy
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body"><p>
+              <img src ="https://raw.githubusercontent.com/Harsh1347/Flask/master/images/world_wind_energy.png" width="450" height="400" align ="right" alt="..." style="padding: 0.5%;" >
+              As the world moves forward, renewable energy sources will play a crucial role in promoting a green, sustainable society and hence, will directly impact on the health and well-being of all humans across Earth. <br><br>
+              
+              Renewable sources are expected to make about 45 per cent of the global electricity demand by 2040. Today, wind energy accounts for 651 GW of electrical power, which accounts for more than 5% of global demand. With the continuous, exponential growth of wind farms and the development of more efficient wind turbines, the impact and contribution of wind energy for energy is only going to increase. Therefore, there is an ever-increasing need for a solution which can efficiently integrate various conventional power sources with wind farms to reduce overproduction by conventional sources which can unnecessarily contribute towards pollution. By collaborating traditional and renewable sources, we can efficiently match demand with supply without excessive production and therefore save up on monetary assets as well.</p>
+</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                The LSTM Neural Network Model
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <p>After testing multiple Neural Network algorithms, we decided to finalize Long Short Term Memory (LSTM) for predicting the power output of the turbines. LSTM being a type of Recurrent Neural Network is an algorithm which is efficient for time series forecasting, wherein you require long term dependencies. This was crucial for our project as we were required to predict the power output given a set of previous and present weather information. As LSTM is very capable of handling data for long periods, which is required in our case, it performed much better for the same data set than other machine learning models like linear regression, logistic regression etc. 
+                <br><br><img src="https://raw.githubusercontent.com/Harsh1347/Flask/master/images/LSTM_SUMM.png" width="400" height="300" align ="left" alt="IMG" style="padding: 1%;">
+                We selected "Adam" as our optimizer due to the fact it performs much better than Root mean square(RMS prop) and the weighted mean average for data with a lot of noise/sparse gradients ( which is generally the case for weather data sets). Adam was also chosen as it is computationally very efficient as well.
+                <br><br>
+                For our loss function, we went with "Mean Absolute Error" as it gave better accuracy and took less to optimize the model when compared to  Mean Square error.
+                <br><br>
+                A total of 250 epochs were performed on the data set.
+                <br><br>
+                The data set was compiled using the Supervisory Control and Data Acquisition (SCADA) system integrated with modern wind turbines. It consisted of 1,05,120 rows of multi-variate data. After careful evaluation of inter dependencies of the various variables using graphical and statistical methods, it was concluded that the Active power output of the wind turbines had a maximum correlation with Wind speed and wind direction. To reduce the complexity of the model, other variables were dropped. The data set was then split into the training data, which amounted to 52,561 rows of data and test data, which amounted to 52,559 rows of data. For predictions, a window of five days weather data was taken as input. For each hour, one set of data was recorded, totaling to 120 weather input. An output prediction of 12 hours is given using the provided data. For each hour, six predictions for every ten minutes is made, totaling to 72 active power output predictions for the next 12 hours.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Web-Based Application
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              
+              To make our Machine Learning model user friendly and help the client to visualize the output better, we have created a Web Application using Flask, which will be deployed on Heroku. The web-app will have three sections, Home Page, About Page and Statistics Page. We have used the OpenWeatherMap API to get the current and historical data (Code snippet for real time data collection shown in the picture). The trained ML model has been embedded into our application which will directly use the data received from the API and show the predicted output on the Home page.
+              
+            <br><br>The Home page will have the information about the current weather status and will show a graph of expected power output for the next 72 hours as predicted by our ML model. This webpage will also have a section for the user to enter a few parameters, such as wind speed and direction, that will allow the user to get a rough estimate of output power from the wind turbine for the given condition.<br><br>  
+            
+            The Statistics Page will have statistics about the power generated in the past based on the data analysis that we have done. The webpage will also have graphs which will make the numbers more interpretable and visually informative. It would plots which would correlations between various variables such as wind speed, wind direction, power output etc. Furthermore, it will also display the power generated each hour in the future in the form of a table.
+            
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+{% endblock body %}

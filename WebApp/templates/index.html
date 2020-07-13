@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Index</title>
+{% endblock head %}
+
+{% block body %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="{{ url_for('static', filename = 'windfarm.jpg')}}" class="d-block w-100" alt="...">
+          <div class="card-img-overlay text-white">
+            <p class="lead">
+                <h2 >Current Weather In Istanbul,Turkey</h2>
+                <br>
+                <b>
+                Current Temperature : {{ val['temp'] }}  &#8451;  <br> 
+                <br>
+                Max Temperature : {{ val['maxtemp'] }}  &#8451; <br>
+                <br>
+                Min Temperature : {{ val['mintemp'] }}  &#8451; <br>
+                <br>
+                Wind Speed : {{ val['windspeed'] }} m/s <br>
+                <br>
+                Wind Direction :  {{ val['winddir'] }}&#176;
+            </b>
+             </p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+<div class="jumbotron jumbotron-fluid ">
+    <div class="container">
+    <div class="row">
+    <div class="col-sm">
+    <h2 style="text-align: center;">Power Output for next 72 Hours</h2>
+    <img src="{{url_for('static',filename ='images/chart2.png')}}" alt = "chart" width="95%" height="375px"></img>
+    <br>
+    <br>
+    <h4>Average Power Output Rate is <b>{{ avg }} kW/Hr</b></h4><br><br>
+    <h4>Totat Expected Power for next 3 Days is  <b>{{ t_power }} kW</b></h4>
+</div>
+</div>
+</div>
+<div class ="container ">
+<br><hr><br>
+</div>
+<div class="container-sm ">
+    <h3>Find the percentage of demand fulfilled</h3>
+    <form action="/predict" method="POST">
+        <div class="form-group px-4 py-3">
+            <label for="Demand">Enter Demand in kW for next 72 Hours</label>
+            <input type="text" class="form-control" id="demand" name="demand">
+            <small id="speedHelp" class="form-text text-muted">Enter only Number</small>
+        </div>
+        <button type="submit" class="btn btn-primary ">Show Me Plot</button>
+    </form>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      {% if val['pred'] == 1 %}
+        <img src="{{ url }}"></img>
+        
+      {% else %}
+        <h6></h6>
+      {% endif %}
+    </div>
+</div>
+{% endblock body %}
