@@ -1,6 +1,6 @@
 Made by ***Team YUMIT***, for a better, green future. :deciduous_tree: 
 
-**To check out our web application, click on this [link](https://mighty-mit.herokuapp.com/).**
+**To check out our web application, click on this [link](https://mighty-mit.herokuapp.com/)** (Kindly wait for a minute or so for the application to load. Heroku, being a cloud website hosting service has slow server speed).
 
 - **[Click here](https://drive.google.com/file/d/1GeTh9ag28rgVvaUe2rZh8kdqNqLD5Rs2/view?usp=sharing) to see the documentation of our project.**
 
